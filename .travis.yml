@@ -1,5 +1,7 @@
 sudo: required
 dist: focal
+language: generic
+
 services:
   - docker
 
@@ -11,7 +13,7 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: us-east-2
+  region: "us-east-2"
   app: "frontend"
   env: "Frontend-env"
   bucket-name: "elasticbeanstalk-us-east-2-878302214899"
