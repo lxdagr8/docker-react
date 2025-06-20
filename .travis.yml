@@ -15,10 +15,10 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "frontend"
-  env: "Frontend-env"
+  env: "frontend-env"
   bucket_name: "elasticbeanstalk-us-east-2-878302214899"
   bucket_path: "frontend"
   on:
     branch: main
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
